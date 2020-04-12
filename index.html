@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Git Demo</title>
 </head>
 <body>
-    <h1>Git Learning</h1>
+    <h1>Git Learning en github</h1>
     <h2>Git generalmente solo añade información</h2>
     <p>
 Cuando realizas acciones en Git, casi todas ellas sólo añaden información a la base de datos de Git. Es muy difícil conseguir que el sistema haga algo que no se pueda enmendar, o que de algún modo borre información. Como en cualquier VCS, puedes perder o estropear cambios que no has confirmado todavía. Pero después de confirmar una copia instantánea en Git es muy difícil perderla, especialmente si envías tu base de datos a otro repositorio con regularidad.
@@ -14,15 +15,55 @@ Cuando realizas acciones en Git, casi todas ellas sólo añaden información a l
 <p>
 Esto hace que usar Git sea un placer, porque sabemos que podemos experimentar sin peligro de estropear gravemente las cosas. Para un análisis más exhaustivo de cómo almacena Git su información y cómo puedes recuperar datos aparentemente perdidos.
 </p>
-<h2>Los Tres Estados</h2>
+
+<h2>Stasheando cambios</h2>
 <p>
-Ahora presta atención. Esto es lo más importante que debes recordar acerca de Git si quieres que el resto de tu proceso de aprendizaje prosiga sin problemas. Git tiene tres estados principales en los que se pueden encontrar tus archivos: confirmado (committed), modificado (modified), y preparado (staged). Confirmado: significa que los datos están almacenados de manera segura en tu base de datos local. Modificado: significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos. Preparado: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.
+Antes de que puedas correr git stash, necesitas tener algunos cambios sin commitear en el repositorio de Git. Por ejemplo, si editas un archivo llamado foo.py, la salida del comando git status debería ser algo como esto:
+</p>
+<p>
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+modified:   foo.py
 </p>
 <img src="pictures/git status.png" alt="Status Git">
 
 <form action="#" method="get">
-    <input type="button" value="Ingreso">
-</form>
+    <input type="texto" name="firstName" id="firstName">
+    <input type="submit" value="Enviar">
+    <img src="#" alt="">
+    <input type="number" name="lastname" id="lastname">
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" name="birthdate" id="birthdate">
 
+    <fieldset>
+        <legend>Contacto</legend>
+        <label for="name">Name:</label>
+        <input type="text"  id="name">
+
+        <label for="lastname">Lastname:</label>
+        <input type="text" name="" id="lastname">
+
+        <label for="age">Age:</label>
+        <input type="number" name="" id="age">
+    </fieldset>
+
+    <h3>Comandos de Git Flow</h3>
+        <img src="pictures/Screen Shot 2020-04-10 at 17.10.18.png" alt="">
+    
+</form>
+<a href="https://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html">Git Flow</a>
+
+
+<h3>Gitlab</h3>
+<p>
+    GitLab is an open core company which develops software for the software development lifecycle used by more than 100,000 organizations and has an active community of more than 2200 contributors. GitLab openly shares more information than most companies and is public by default, meaning our projects, strategy, direction and metrics are discussed openly and can be found within our website. Our values are Collaboration, Results, Efficiency, Diversity & Inclusion, Iteration, and Transparency (CREDIT) and these form our culture. 
+</p>
+
+<p>
+    Cambios en mi repositorio remoto para aprender utilizar git fetch y git merge
+</p>
+<h3>Agregamos una rama feature git-flow utilizando git flow con  udemy</h3>
 </body>
 </html>
