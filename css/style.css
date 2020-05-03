@@ -44,3 +44,8 @@ h5
   font-size: 3.2rem;
 }
 
+.contenedor
+{
+  max-width: 120rem;
+  margin: 0 auto;
+}
